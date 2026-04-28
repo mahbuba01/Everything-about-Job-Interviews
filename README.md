@@ -91,9 +91,21 @@ Professionals: Focus on working on "meaty" projects.
 25. But got an offer? Celebrate! Your hard work has paid off!
 
 
-
 Reference Book: 
 Cracking the Coding Interview
+
+# Technical Interview Preparation
+
+Online Resources:
+
+1. Pramp – Practice online mock interviews
+2. LeetCode – Standard problems & solutions
+3. Codewars – Explore others’ smart solutions
+
+Books:
+
+1. Cracking the Coding Interview
+2. Elements of Programming Interviews (Not necessary for beginners)
 
 # Live Coding Practice Platforms
 
@@ -122,9 +134,106 @@ Cracking the Coding Interview
 For example: Thanks for the $180K offer! Based on my experience & market data, Am targeting $200K; How can we align on that?
 
 
+# Laws of Software Engineering
+
+1. Murphy’s Law (Edward A. Murphy Jr.)
+
+If something can go wrong, it will go wrong.
+
+Example:
+
+• Server might crash → keep backups
+
+• Users may give wrong input → add validation
+
+2. Brooks’s Law (Fred Brooks)
+
+Adding manpower to a late project makes it later.
+
+When new people are added to a late project:
+
+• Training is required
+
+• Communication increases
+
+• Confusion increases
+
+3. Postel’s Law (Jon Postel)
+
+Be conservative in what you send (send clean & correct data), and liberal in what you accept (be flexible, tolerate small errors).
+
+4. Pareto Principle (Vilfredo Pareto)
+
+80% of the results come from 20% of the work.
+
+Not all tasks are equally important, a small portion (20%) creates the biggest impact (80%).
+
+5. Kerckhoffs’s Principle (Auguste Kerckhoffs)
+
+A system should remain secure even if everything about it is public (except the key).
+
+Security depends on the secrecy of the key, not on hiding the system (algorithm or code).
+
+6. Moore’s Law (Gordon Moore)
+
+Computing power roughly doubles every ~2 years.
+
+Example:
+
+Earlier, training an AI model took 1 month.
+
+Now, the same task can be done in a few days.
+
+7. Ninety-Ninety Rule (Tom Cargill)
+
+First 90% of the work takes 10% of the time.
+
+Remaining 10% of the work takes 90% of the time.
+
+The initial progress feels fast, but the final part (debugging, polishing, handling edge cases) takes much longer.
+
+8. Premature Optimization Principle (Donald Knuth)
+
+Premature optimization is the root of all evil.
+
+Avoid excessive optimization at the beginning — focus on making it work first, then optimize later.
+
+9. Metcalfe’s Law (Robert Metcalfe)
+
+The value of a network grows with the square of the number of connected users.
+
+As users increase, value doesn’t grow linearly, it grows quadratically (n²).
+
+10. OODA Loop (John Boyd)
+
+A model for fast decision-making and iteration:
+
+Observe → Orient → Decide → Act
+
+Example:
+
+1. Launch an app
+2. See user feedback (Observe)
+3. Understand the problem (Orient)
+4. Decide on changes (Decide)
+5. Release updates (Act)
 
 
+# Software Development Mistakes 
 
+1. Missed the deadline? Add more developers.
+2. Someone isn’t working properly? Say nothing.
+3. One person will do everything; no need to involve others.
+4. The project is difficult? Hard work alone will make it succeed.
+5. Work loudly in an open space.
+6. Risk management? Not needed (Agile/Rapid methods will handle it).
+7. Missed a milestone? Complete it before the next one.
+8. Testing/environment setup takes time? No problem.
+9. No need for version control in small projects.
+10. Documentation? Not required; code is enough.
+11. Client/stakeholder feedback? A waste of time.
+12. Branching strategy? Just push to main.
+13. CI/CD pipeline? Overkill for small teams.
 
 
 
