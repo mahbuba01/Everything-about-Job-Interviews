@@ -107,6 +107,150 @@ Books:
 1. Cracking the Coding Interview
 2. Elements of Programming Interviews (Not necessary for beginners)
 
+# System Design Interview Preparation
+
+System design questions are common in interviews (especially at big tech companies like Google, Amazon, Facebook).
+
+The goal is to evaluate how you think about and design large-scale systems.
+
+Important Terminologies:
+
+Replication: Keeping copies of data from one machine on other machines for fault tolerance.
+
+Consistency: Ensuring all machines have the same data.
+
+Eventual Consistency: All machines will eventually have the same data over time.
+
+Availability: The system can always respond to requests, even if some nodes fail.
+
+Partition Tolerance: The system continues to operate despite network failures or communication issues between nodes.
+
+Vertical Scaling: Increasing the resources (CPU, RAM, etc.) of a single machine.
+
+Horizontal Scaling: Adding more machines to handle increased load.
+
+Sharding: Splitting large datasets across multiple machines.
+
+Load Balancer: Distributes incoming traffic across multiple servers.
+
+Caching: Storing frequently accessed data (e.g., Redis, CDN) to reduce latency and database load.
+
+CAP Theorem:
+
+In a distributed system, you cannot simultaneously guarantee all three:
+
+1. Consistency (C)
+2. Availability (A)
+3. Partition Tolerance (P)
+
+At most, you can fully achieve two of them.
+
+"In distributed systems, when a network partition occurs, you must choose between Consistency(C) and Availability(A)"
+
+Example:
+
+Banking system → prefers Consistency
+
+Social media feed → prefers Availability
+
+Common Interview Questions:
+
+• Design a scalable search system like Google Search.
+
+• Design a URL shortener like Bitly.
+
+• Design a messaging system like WhatsApp.
+
+Interviewers typically focus on:
+
+• Scalability
+
+• Traffic estimation
+
+• Storage planning
+
+Example:
+
+Designing a URL Shortener
+
+Step 1: Requirements
+
+• Short URL generation
+
+• Redirection service
+
+• High availability
+
+Step 2: Scale Estimation
+
+• 100 million URLs
+
+• 10,000 QPS
+
+Step 3: High-Level Design
+
+• Load Balancer → API Servers → Database (Sharded) → Cache (Redis)
+
+Step 4: Deep Dive
+
+• Use hashing to generate short codes.
+
+• Store mappings in a NoSQL database for fast reads.
+
+• Cache popular URLs.
+
+Step 5: Trade-offs
+
+• Hash collisions → Use longer hashes.
+
+• Consistency vs Availability → Use eventual consistency for caching.
+
+Important Concepts to Study:
+
+• Horizontal Scaling & Vertical Scaling
+
+• Load Balancing & Caching
+
+• Session Management
+
+• Database Replication & Partitioning
+
+• Data Center Redundancy
+
+• Database Indexing
+
+• Rate Limiting
+
+• Security & Monitoring
+
+• Latency vs Throughput
+
+• Hashing & Consistent Hashing (Must-Know) → Essential for sharding and load distribution.
+
+Preparation & Resources:
+
+1. Real System Design Case Studies
+
+Designing Data-Intensive Applications
+
+• Provides deep understanding of databases, scalability and consistency.
+
+2. Modern Interview-Focused Resource
+
+System Design Primer (GitHub)
+
+• The most popular interview-focused resource.
+
+• Covers real interview questions and detailed solutions.
+
+3. Practice Platform
+
+Excalidraw (or any whiteboard tool)
+
+• System design interviews require drawing and explaining architectures.
+
+• Without practice, it is difficult to perform well in interviews.
+
 # Live Coding Practice Platforms
 
 1. Pramp
